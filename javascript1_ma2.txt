@@ -1,0 +1,45 @@
+//MODULE ASSIGNMENT 2 - LEVEL 1
+
+1. What is a function literal?
+A function literal is kind of the definion of our funtion properties.
+The first is the reserverd "function" keyword.
+The second is the function name.
+The third is the function parameters.
+The fourth is the function expression inside our function, but not the actual content itself.
+
+2. What is the constructor?
+A constructor is something we can call upon to literally construct something new.
+Often this comes in the form of a function with parameters we can use to pass arguments into.
+For instance, we could create a person-function with the parameters of "name", "age", "height" and "weight".
+We can then create multiple other functions by using the new-statement, without having to define these properties other than the actual input values, we just call the ones inside the constructor.
+Doing things this way can save many lines of code and are considered to be efficient and best practice.
+
+3. What does the return statement do?
+The return statement kind of does what the name says, it returns something.
+We can use this inside a function to return a value. The return statement stops the execution, and the function will therefore exit after the return statement has run.
+As an example we can create a function like this:
+
+function multiply() {
+	var y = 5;
+	var x = 5;
+	return y * x;
+}
+
+console.log(multiply());
+// logs 25 to the console
+
+4. What will be written to the console from this function:
+		function myFunction(){
+			  return console.log('inside my function');
+			  console.log('My name is Andy');
+		}
+		myFunction();
+
+'inside my function' will be logged to the console. The reason is that the function stops executing after the return statement.
+If we removed the return statement, both console.log's inside the function would be logged to the console.
+
+5. Briefly describe scope in JavaScript.
+Scope in Javascript is kind of a level for variables, functions etc.
+Our highest level is called global, and means that we can reach the content from everywhere.
+The opposite of global variables are those that exist inside funtions for example. These can't be reached by other parts of our code out of the box.
+We can however work around this with parent/child logic. A child may call a variable inside a parent if the parent is specified before the variable from the child.
